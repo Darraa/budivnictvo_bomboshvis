@@ -1,0 +1,32 @@
+.process {
+    padding: 80px 0;
+
+    &__title{
+        padding-top: 20px;
+        font-weight: bold;
+        color: #f8b636;
+    }
+    &__container {
+        >svg {
+            padding-bottom: 40px;
+            padding-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .process {
+        &__container {
+            flex-direction: column;
+            align-items: center;
+
+            &-item {
+                width: 90%;
+            }
+
+            >svg{
+                transform: rotate(90deg)
+            }
+        }
+    }
+}
