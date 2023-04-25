@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/masked-phone.js"></script>
     <title>Будівництво бомбосховищ</title>
 </head>
 
 <body>
     <main>
-        <section class="hero-page">
+        <div class="hero-page">
             <div class="hero-page__title">
                 <h1>
                     Будівництво бомбосховищ
@@ -22,9 +26,9 @@
                     <button>Детальніше</button>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="about">
+        <div class="about">
             <h2 class="title">
                 Будівництво бомбосховищ
             </h2>
@@ -37,11 +41,11 @@
                         вагому
                         підставу: люди занепокоєні своєю безпекою.</p>
                     <span>Будівництво бомбосховищ має сенс у випадку:</span>
-                    <ul>
-                        <li>Природних катастроф</li>
-                        <li>Викидів шкідливих речовин у повітря</li>
-                        <li>Повномасштабних військових конфліктів</li>
-                    </ul>
+                    <div>
+                        <div>Природних катастроф</div>
+                        <div>Викидів шкідливих речовин у повітря</div>
+                        <div>Повномасштабних військових конфліктів</div>
+                    </div>
                 </div>
             </div>
 
@@ -55,24 +59,24 @@
                 </div>
                 <div class="about__second-list">
 
-                    <ul class="list">
-                        <li>
+                    <div class="list">
+                        <div class="list__item">
                             <img src="./img/icon/armored-concrete.png" alt="Бетон і сталь">
                             <div>
                                 <b> Бетон і сталь</b> <br>
                                 Головним матеріалом, що використовується для конструкції укриттів, є бетон, який щільно
                                 армується сталевими прутами.
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="list__item">
                             <img src="./img/icon/wall.png" alt="Товщина перегородок">
                             <div>
                                 <b> Товщина перегородок</b> <br>
                                 Ми розробляємо укриття з величезною міцністю та товстими стінами, щоб забезпечити
                                 безпеку в разі найсильніших вибухів.
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="list__item">
                             <img src="./img/icon/fan-auto.png" alt="Вентиляція">
                             <div>
                                 <b> Вентиляція </b><br>
@@ -80,16 +84,16 @@
                                 регенерації
                                 повітря.
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="list__item">
                             <img src="./img/icon/electricity.png" alt="Електрика">
                             <div>
                                 <b> Електрика</b> <br>
                                 Укриття мають електрогенератори, які забезпечують стійке електропостачання на паливі зі
                                 спеціального приміщення.
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="list__item">
                             <img src="./img/icon/food.png" alt="Їжа">
                             <div>
                                 <b>Їжа</b> <br>
@@ -97,25 +101,43 @@
                                 або
                                 навіть років.
                             </div>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="list__item">
                             <img src="./img/icon/respirator.png" alt="Індивідуальний захист">
                             <div>
                                 <b> Індивідуальний захист</b> <br>
                                 Можливість виходу з укриття забезпечена індивідуальними засобами захисту, такими як
                                 захисні костюми та респіратори.
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="process">
+        <div class="process">
             <h2 class="title">
                 Процес будівництва
             </h2>
             <div class="process__container wrapper">
+                <div class="process__container-item wrapper__item">
+                    <div class="process__container-icon wrapper__item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#f8b636" width="50"
+                            height="50">
+                            <path
+                                d="M0 48C0 21.5 21.5 0 48 0H336c26.5 0 48 21.5 48 48V207l-42.4 17H304 272c-8.8 0-16 7.2-16 16v32 24.2V304c0 .9 .1 1.7 .2 2.6c2.3 58.1 24.1 144.8 98.7 201.5c-5.8 2.5-12.2 3.9-18.9 3.9H240V432c0-26.5-21.5-48-48-48s-48 21.5-48 48v80H48c-26.5 0-48-21.5-48-48V48zM80 224c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H80zm80 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H176c-8.8 0-16 7.2-16 16zM64 112v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zM176 96c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H176zm80 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H272c-8.8 0-16 7.2-16 16zM423.1 225.7c5.7-2.3 12.1-2.3 17.8 0l120 48C570 277.4 576 286.2 576 296c0 63.3-25.9 168.8-134.8 214.2c-5.9 2.5-12.6 2.5-18.5 0C313.9 464.8 288 359.3 288 296c0-9.8 6-18.6 15.1-22.3l120-48zM527.4 312L432 273.8V461.7c68.2-33 91.5-99 95.4-149.7z" />
+                        </svg>
+                    </div>
+                    <span class="process__title">Проект</span>
+                    <p>
+                        Для кожного бункера розробляється індивідуальний проект з урахуванням усіх потреб користувачів
+                    </p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff" width="50" height="50">
+                    <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                </svg>
+
                 <div class="process__container-item wrapper__item">
                     <div class="process__container-icon wrapper__item-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#f8b636" width="50"
@@ -127,24 +149,6 @@
                     <span class="process__title">Розташування</span>
                     <p>Укриття повинно бути забезпечене надійним захистом і будуватись згідно з геологічними умовами.
                     </p>
-                </div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff" width="50" height="50">
-                    <path
-                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-                </svg>
-
-                <div class="process__container-item wrapper__item">
-                    <div class="process__container-icon wrapper__item-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#f8b636" width="50"
-                            height="50">
-                            <path
-                                d="M0 48C0 21.5 21.5 0 48 0H336c26.5 0 48 21.5 48 48V207l-42.4 17H304 272c-8.8 0-16 7.2-16 16v32 24.2V304c0 .9 .1 1.7 .2 2.6c2.3 58.1 24.1 144.8 98.7 201.5c-5.8 2.5-12.2 3.9-18.9 3.9H240V432c0-26.5-21.5-48-48-48s-48 21.5-48 48v80H48c-26.5 0-48-21.5-48-48V48zM80 224c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H80zm80 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16H176c-8.8 0-16 7.2-16 16zM64 112v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zM176 96c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H176zm80 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V112c0-8.8-7.2-16-16-16H272c-8.8 0-16 7.2-16 16zM423.1 225.7c5.7-2.3 12.1-2.3 17.8 0l120 48C570 277.4 576 286.2 576 296c0 63.3-25.9 168.8-134.8 214.2c-5.9 2.5-12.6 2.5-18.5 0C313.9 464.8 288 359.3 288 296c0-9.8 6-18.6 15.1-22.3l120-48zM527.4 312L432 273.8V461.7c68.2-33 91.5-99 95.4-149.7z" />
-                        </svg>
-                    </div>
-                    <span class="process__title">Проект</span>
-                    <p>Кожен бункер проектується індивідуально, враховуючи кількість людей, час перебування та інші
-                        зручності.</p>
                 </div>
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff" width="50" height="50">
@@ -166,29 +170,31 @@
                 </div>
             </div>
 
-        </section>
+        </div>
 
-        <section class="form">
+        <div class="form">
             <div class="form__container">
-                <h3 class="form__container-title">Залиште свої контактні дані і ми зв'яжемось з вами!</h3>
+                <h3 class="form__container-title">Залишились питання?</h3>
                 <form class="form__container-form" id="form">
                     <div class="name">
-                        <input name="name" type="text" placeholder="Ім'я" id="name" />
+                        <input name="name" type="text" placeholder="Ім'я" id="name" title="Введіть ваше ім'я." />
                     </div>
                     <div class="phone">
-                        <input name="phone" type="tel" id="phone" placeholder="Телефон" />
+                        <input name="phone" type="tel" id="phone" placeholder="Телефон"
+                            title="Введіть ваш номер телефону." />
                     </div>
                     <div class="text">
-                        <textarea name="text" id="comment" placeholder="Повідомлення"></textarea>
+                        <textarea name="text" id="comment" placeholder="Повідомлення"
+                            title="Введіть ваше повідомлення."></textarea>
                     </div>
                     <div class="submit">
                         <button class="form-btn">Відправити</button>
                     </div>
                 </form>
             </div>
-        </section>
+        </div>
 
-        <section class="services">
+        <div class="services">
             <div class="services__item">
                 <div class="services__item-text">
                     <h2 class="title">
@@ -281,9 +287,9 @@
                     <button>Замовити консультацію</button>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="stages">
+        <div class="stages">
             <h2 class="title">Етапи будівництва </h2>
 
             <div class="stages__wrapper">
@@ -343,14 +349,15 @@
                             <span class="num">06</span>
                         </div>
                         <div>
-                            <h3>Ремонт</h3>
-                            <span>Ремонт в бункері</span>
+                            <h3>Оздоблення</h3>
+                            <span>Внутрішнє оздоблення</span>
                         </div>
                     </div>
                 </div>
-        </section>
+            </div>
+        </div>
 
-        <section class="garanty">
+        <div class="garanty">
             <h2 class="title">Ми гарантуємо</h2>
             <div class="garanty__container wrapper">
                 <div class="garanty__container-item wrapper__item">
@@ -386,8 +393,32 @@
                     <h4>Терміни і вартість</h4>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div class="gallery">
+            <h2 class="title">Наші роботи</h2>
+
+            <div class="carousel owl-carousel">
+                <div class="card img-container">
+                    <img src="./img/gallery/slide-1.jpg" alt="Наші роботи">
+                </div>
+                <div class="card img-container">
+                    <img src="./img/gallery/slide-2.jpg" alt="Наші роботи">
+                </div>
+                <div class="card img-container">
+                    <img src="./img/gallery/slide-3.jpg" alt="Наші роботи">
+                </div>
+                <div class="card img-container">
+                    <img src="./img/gallery/slide-4.jpg" alt="Наші роботи">
+                </div>
+                <div class="card img-container">
+                    <img src="./img/gallery/slide-5.jpg" alt="Наші роботи">
+                </div>
+            </div>
+        </div>
+
     </main>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -109,6 +109,10 @@ p, span, li {
   line-height: 1.8rem;
 }
 
+input:focus {
+  outline: none;
+}
+
 h1 {
   text-transform: uppercase;
   font-weight: 700;
@@ -289,17 +293,17 @@ h4 {
   flex-wrap: wrap;
   gap: 20px;
 }
-.about__second-list .list li {
+.about__second-list .list__item {
   display: flex;
   width: 40%;
 }
-.about__second-list .list li img {
+.about__second-list .list__item img {
   width: 40px;
   height: 40px;
   float: left;
   margin-right: 10px;
 }
-.about__second-list .list li b {
+.about__second-list .list__item b {
   color: #f8b636;
 }
 
@@ -307,7 +311,7 @@ h4 {
   .about__first-text, .about__second-text {
     width: 90%;
   }
-  .about__second-list .list li {
+  .about__second-list .list__item {
     width: 90%;
   }
 }
@@ -488,4 +492,29 @@ h4 {
   .garanty__container {
     flex-direction: column;
   }
+}
+.gallery {
+  padding: 80px 0;
+  width: 100%;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.owl-dot {
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #f8b636 !important;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: #f8b636 !important;
 }
