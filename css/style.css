@@ -203,7 +203,7 @@ h4 {
 .hero-page {
   width: 100%;
   height: 100vh;
-  background-image: radial-gradient(30.56% 76.04% at 74.58% 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../../img/hero-page-bg.jpg");
+  background-image: radial-gradient(30.56% 76.04% at 74.58% 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url("../../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -321,7 +321,7 @@ h4 {
   }
 }
 .process {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .process__title {
   padding-top: 20px;
@@ -399,6 +399,14 @@ h4 {
 }
 .services__item-text {
   width: 45%;
+}
+.services__btn{
+  background: #f8b636;
+  border-color: transparent;
+}
+.services__btn:hover{
+  background: none;
+  border: 1px solid #fff;
 }
 .services__item-text span {
   color: #f9b636;
@@ -517,4 +525,76 @@ h4 {
 .owl-dot.active,
 .owl-dot:hover {
   background: #f8b636 !important;
+}
+.image-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 50;
+}
+
+.image-box {
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 51;
+}
+
+.enlarged-img {
+  max-height: calc(100vh - 100px);
+  max-width: calc(100vw - 100px);
+  display: block;
+  margin: auto;
+}
+
+.close {
+  position: absolute;
+  top: -10%;
+  left: 100%;
+}
+
+#close-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.testimonials{
+  padding: 80px 0;
+}
+
+.testimonials__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  border-radius: 0.5rem;
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.334);
+}
+
+.testimonials__item span{
+  color: #f8b636;
+}
+
+.testimonials__item-text{
+  padding-top: 10px;
+  width: 80%;
+}
+
+.testimonials__item-text p{
+  font-size: 14px;
+}
+
+.testimonials__item-avatar{
+  width: 30%;
+}
+.testimonials__item-avatar img{
+  border-radius: 50%;
 }

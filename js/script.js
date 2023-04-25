@@ -27,7 +27,7 @@ $(".carousel").owlCarousel({
   margin: 10,
   loop: true,
   autoplay: true,
-  autoplayTimeout: 2000,
+  autoplayTimeout: 3000,
   autoplayHoverPause: true,
   responsive: {
     0:{
@@ -44,3 +44,31 @@ $(".carousel").owlCarousel({
     }
   }
 });
+
+
+
+
+// ------------ZOOM IMAGE-----------
+
+$('.zoom').click(function() {
+  $('body').css('overflow', 'hidden');
+  var imgSrc = $(this).find('img').attr('src');
+  $('.image-box').fadeIn();
+  $('.image-view').fadeIn();
+  $('.image-box').append('<img src="'+imgSrc+'" class="enlarged-img"/>');
+  });
+
+  $('#close-btn').click(function() {
+  $('.image-box').fadeOut();
+  $('.image-view').fadeOut();
+  $('.enlarged-img').remove();
+  });
+
+  $('.zoom').click(function() {
+    $('.carousel').trigger('stop.owl.autoplay');
+  });
+
+  $('#close-btn').click(function() {
+    $('body').css('overflow', 'auto');
+    $('.carousel').trigger('play.owl.autoplay');
+  });

@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./js/masked-phone.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Будівництво бомбосховищ</title>
 </head>
 
@@ -211,7 +211,7 @@
                         інноваційні програмні комплекси відкривають у проектуванні перед нами, а також нашими клієнтами
                         справді необмежені можливості виконати проектування будь-якого сучасного об'єкту. Ви можете
                         негайно оформити заявку на проектування бункера.</p>
-                    <button>Замовити консультацію</button>
+                    <button class="services__btn">Замовити консультацію</button>
                 </div>
                 <div class="services__item-img img-container">
                     <img src="./img/proektuvannya-bomboshovisch.png" alt="Проектування бомбосховищ та бункерів">
@@ -238,7 +238,7 @@
                         щоб зробити підземну будівлю, яка забезпечить високі гарантії збереження Вашого життя та життя
                         близьких для Вас людей.
                     </p>
-                    <button>Замовити консультацію</button>
+                    <button class="services__btn">Замовити консультацію</button>
                 </div>
             </div>
 
@@ -257,7 +257,7 @@
                         Ми проектуємо, виготовляємо, будуємо та облаштовуємо бункери, укриття і безпечні кімнати. Роботи
                         проводяться як під ключ. Замовлення приймаємо з усіх контрольованих регіонів України.
                     </p>
-                    <button>Замовити консультацію</button>
+                    <button class="services__btn">Замовити консультацію</button>
                 </div>
                 <div class="services__item-img img-container">
                     <img src="./img/bunker-shov.png" alt="Будівництво бомбосховищ">
@@ -284,7 +284,7 @@
                         щоб зробити підземну будівлю, яка забезпечить високі гарантії збереження Вашого життя та життя
                         близьких для Вас людей.
                     </p>
-                    <button>Замовити консультацію</button>
+                    <button class="services__btn">Замовити консультацію</button>
                 </div>
             </div>
         </div>
@@ -399,24 +399,98 @@
             <h2 class="title">Наші роботи</h2>
 
             <div class="carousel owl-carousel">
-                <div class="card img-container">
+                <div class="card img-slide zoom">
                     <img src="./img/gallery/slide-1.jpg" alt="Наші роботи">
                 </div>
-                <div class="card img-container">
+                <div class="card img-slide zoom">
                     <img src="./img/gallery/slide-2.jpg" alt="Наші роботи">
                 </div>
-                <div class="card img-container">
+                <div class="card img-slide zoom">
                     <img src="./img/gallery/slide-3.jpg" alt="Наші роботи">
                 </div>
-                <div class="card img-container">
+                <div class="card img-slide zoom">
                     <img src="./img/gallery/slide-4.jpg" alt="Наші роботи">
                 </div>
-                <div class="card img-container">
+                <div class="card img-slide zoom">
                     <img src="./img/gallery/slide-5.jpg" alt="Наші роботи">
                 </div>
             </div>
         </div>
 
+        <div class="image-view">
+            <div class="image-box">
+                <div class="close">
+                    <button id="close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#f8b636" width="30"
+                            height="30">
+                            <path
+                                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <h2 class="title">
+                Відгуки клієнтів
+            </h2>
+            <div class="carousel owl-carousel">
+                <div class="card testimonials__item">
+                    <div class="testimonials__item-avatar">
+                        <img src="./img/testimonials/person-1.jpg"
+                            alt="Відгук">
+                    </div>
+                    <span>Людмила С.</span>
+                    <div class="testimonials__item-text">
+                        <p>Я була дуже задоволена співпрацею з PL2Т. Вони проектували для мене підземне укриття, і результат
+                            перевершив мої очікування. Співробітники компанії були дуже професійні та доброзичливі, завжди
+                            готові відповісти на будь-які запитання та допомогти з усіма питаннями, що виникали під час
+                            проектування.</p>
+                        </div>
+                    </div>
+
+                <div class="card testimonials__item">
+                    <div class="testimonials__item-avatar">
+                        <img src="./img/testimonials/person-2.jpg" alt="Відгук">
+                    </div>
+                    <span>Ігор У.</span>
+                    <div class="testimonials__item-text">
+                        <p> Всі наші вимоги та побажання були враховані, а команда PL2Т
+                            запропонувала додаткові ідеї, що підвищили комфорт та безпеку проживання в бункері. Рекомендую
+                            цю компанію як надійного та професійного партнера у сфері проектування та будівництва підземних
+                            споруд.</p>
+                        </div>
+                    </div>
+
+                <div class="card testimonials__item">
+                    <div class="testimonials__item-avatar">
+                        <img src="./img/testimonials/person-3.jpg" alt="Відгук">
+                    </div>
+                    <span>Вадим Т.</span>
+                    <div class="testimonials__item-text">
+                        <p>Я дуже задоволений процесом виконання замовлення на проектування та будівництво бункера від
+                            компанії PL2Т. Замовлення було виконано у найкоротший термін,
+                            а результат перевершив мої очікування. Дякую за чудову роботу! Я буду
+                            рекомендувати компанію PL2Т своїм знайомим та колегам.</p>
+                        </div>
+                    </div>
+
+                <div class="card testimonials__item">
+                    <div class="testimonials__item-avatar">
+                        <img src="./img/testimonials/person-4.jpg"
+                            alt="Відгук">
+                    </div>
+                    <span>Ольга Г.</span>
+                    <div class="testimonials__item-text">
+                        <p>Я дуже задоволена співпрацею з цією компанією і їхнім професійним підходом до будівництва
+                            бункера. Працівники компанії допомогли мені зрозуміти всі деталі проекту, відповіли на всі мої
+                            запитання та врахували всі мої побажання. Після цього вони розпочали роботу та виконали її
+                            вчасно та якісно.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="./js/script.js"></script>
 </body>
